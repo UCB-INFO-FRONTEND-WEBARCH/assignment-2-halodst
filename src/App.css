@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient( #141414 0%, #26223b 100%);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 2rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+form button {
+  color: #ffffff;
+  background: #6947ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-it {
+  min-height: 7vh;
+  min-width: 25vw;
+  display: flex;
+  justify-content: center;
+  margin: 0.2vw;
+}
+
+.submit-edit {
+  background: #6947ff;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 2rem;
+  max-height: 8vh;
+}
+
+.edit-btn {
+  background: #ffffff;
+  border: none;
+  margin:1.2vh;
+  color: #6947ff;
+}
+
+.todo-input {
+  vertical-align: top;
+}
+
+.todo-button {
+  vertical-align: top;
+}
+
+.tag-item {
+  display: flex;
+  margin: 2vh;
+  color: #868686;
+  font-size: 2vh;
+}
+
+.tag-div {
+  max-width: 35%;
+  margin-right: 2vh;
+  vertical-align: top;
+}
+
+.tag-button{
+  color: #6947ffc4;
+  background-color: #ffffff;
+  float: right;
+  vertical-align: top;
+}
+
+.tag-input {
+  display: flex;
+  margin-left: 1vh;
+  max-width: 25vw;
+  float: left;
+  vertical-align: top;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 40%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+.filter-todo {
+  padding: 1rem;
+}
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #6947ff;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  background: rgb(11, 212, 162);
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  text-decoration-color: rgb(6, 6, 78);
+  opacity: 0.4;
+}
+
+/*CUSTOM SELECTOR */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+/* Custom Select */
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #6947ff;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #6947ff;
+  cursor: pointer;
+  pointer-events: none;
+}
+/* Transition */
+/*
+.select:hover::after {
+  transform: scale(1.5);
+}
+*/
